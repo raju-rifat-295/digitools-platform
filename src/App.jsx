@@ -20,6 +20,7 @@ function App() {
       <Hero></Hero>
       <Status></Status>
       <Main products={products}></Main>
+      
     </>
   )
 }
