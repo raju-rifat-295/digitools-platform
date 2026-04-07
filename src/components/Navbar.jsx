@@ -19,7 +19,7 @@ const Navbar = () => {
                     <li className='hover:bg-amber-500 px-2.5 py-1'><a href="">FAQ</a></li>
                 </ul>
             </div>
-            <div class="py-2 font-extrabold text-5xl text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
+            <div className="py-2 font-extrabold text-5xl text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
                 DigiTools
             </div>
             <ul className='hidden md:flex gap-8 font-semibold'>

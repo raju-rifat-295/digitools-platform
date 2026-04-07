@@ -1,0 +1,98 @@
+[
+  {
+    "id": "prod_01",
+    "name": "Starter Plan",
+    "description": "Perfect for individuals looking to build a professional online presence.",
+    "price": 0,
+    "period": "monthly",
+    "tag": "Free Forever",
+    "tagType": "new",
+    "features": [
+      "5 basic templates",
+      "Standard web hosting",
+      "Community support",
+      "SSL Security"
+    ],
+    "icon": "https://i.ibb.co.com/svrzbfFq/design-tool.png"
+  },
+  {
+    "id": "prod_02",
+    "name": "Professional Suite",
+    "description": "Advanced tools for freelancers and growing small businesses.",
+    "price": 29.00,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ premium templates",
+      "Custom domain connection",
+      "Priority email support",
+      "Advanced analytics"
+    ],
+    "icon": "https://i.ibb.co.com/GQzrX6sZ/operation.png"
+  },
+  {
+    "id": "prod_03",
+    "name": "Enterprise Cloud",
+    "description": "Full-scale infrastructure solutions for large corporate teams.",
+    "price": 999.00,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited users",
+      "Dedicated account manager",
+      "Custom API access",
+      "99.9% Uptime SLA"
+    ],
+    "icon": "https://i.ibb.co.com/yn3gBX2g/portfolio.png"
+  },
+  {
+    "id": "prod_04",
+    "name": "Content Creator Pack",
+    "description": "Everything you need to produce and edit high-quality video content.",
+    "price": 149.00,
+    "period": "one-time",
+    "tag": "New Release",
+    "tagType": "new",
+    "features": [
+      "4K video assets",
+      "Licensed music library",
+      "Motion graphic presets",
+      "Lifetime updates"
+    ],
+    "icon": "https://i.ibb.co.com/gFfJSH5W/shopping-cart.png"
+  },
+  {
+    "id": "prod_05",
+    "name": "Growth Pro",
+    "description": "Automated marketing tools to scale your customer outreach.",
+    "price": 59.00,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "AI Copywriting assistant",
+      "Automated email sequences",
+      "A/B testing tools",
+      "CRM integration"
+    ],
+    "icon": "https://i.ibb.co.com/WpWxNxx6/social-media.png"
+  },
+  {
+    "id": "prod_06",
+    "name": "Security Hardened Node",
+    "description": "Private, encrypted server nodes for high-security data handling.",
+    "price": 450.00,
+    "period": "yearly",
+    "tag": "High Security",
+    "tagType": "popular",
+    "features": [
+      "End-to-end encryption",
+      "Daily automated backups",
+      "Multi-factor authentication",
+      "Biometric access logs"
+    ],
+    "icon": "https://i.ibb.co.com/pBcwcHpc/writing-2327400-1.png"
+  }
+]
