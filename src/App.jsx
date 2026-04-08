@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import Main from './components/Main'
@@ -12,14 +13,14 @@ const productsData = async () => {
 const products = productsData();
 
 function App() {
-
+  const [cartTip,setCartTip]=useState(0);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cartTip={cartTip}></Navbar>
       <Hero></Hero>
       <Status></Status>
-      <Main products={products}></Main>
+      <Main setCartTip={setCartTip} products={products}></Main>
       
     </>
   )

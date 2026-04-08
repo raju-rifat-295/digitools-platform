@@ -2,23 +2,32 @@ import { X } from 'lucide-react';
 import React from 'react';
 
 
-const Cart = ({ cartArr }) => {
+const Cart = ({ cartArr, setCartArr }) => {
+    const removeItem = (item) => {
+        const filteredArr = cartArr.filter(p => p.id !== item.id);
+        setCartArr(filteredArr);
+    }
     return (
         <>
             {cartArr.map(
                 (item) =>
-                    <div className='flex justify-between items-center p-5 bg-[#F2F2F2] rounded-lg'>
-                        <div className='flex justify-between items-center'>
-                            <div className='w-15 h-15 border-2 border-[#F2F2F2] rounded-full flex justify-center items-center'>
-                                <img className='w-8 h-8' src={item.icon} alt="" />
+                    <div className='w-full flex flex-col md:flex-row justify-between items-center p-6 bg-[#F2F2F2] rounded-xl gap-4'>
+                        <div className='flex flex-row items-center gap-6 text-left w-full flex-1'>
+                            <div className='w-16 h-16 bg-white rounded-2xl flex shrink-0 justify-center items-center shadow-sm'>
+                                <img className='w-10 h-10' src={item.icon} alt="" />
                             </div>
-                            <div className='w-[926px] text-left'>
-                                <p className='text-xl font-semibold'>{item.name}</p>
-                                <p className='text-[16px] text-[#627382]'>${item.price}</p>
+                            <div className='flex-1'>
+                                <p className='text-xl font-bold text-[#1A1A1A]'>{item.name}</p>
+                                <p className='text-lg text-[#627382]'>${item.price}</p>
                             </div>
                         </div>
 
-                        <button className='text-red-500 font-semibold'>Remove</button>
+                        <button
+                            onClick={() => removeItem(item)}
+                            className='text-red-500 font-semibold hover:text-red-700 transition-colors px-4 py-2'
+                        >
+                            Remove
+                        </button>
                     </div>
             )}
         </>

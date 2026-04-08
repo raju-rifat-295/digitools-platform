@@ -1,7 +1,7 @@
 import { Menu, ShoppingCart, X } from 'lucide-react';
 import React, { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ cartTip }) => {
     const [open, setOpen] = useState(false);
     return (
         <div className='flex space-y-3 flex-col md:space-y-3 lg:flex-row justify-between items-center px-14 mx-auto py-3 border-b-2 border-[#F2F2F2]'>
@@ -29,10 +29,13 @@ const Navbar = () => {
                 <li><a href="">Testimonials</a></li>
                 <li><a href="">FAQ</a></li>
             </ul>
-            <div className='flex items-center gap-4 font-semibold'>
+            <div className='relative flex items-center gap-4 font-semibold'>
                 <ShoppingCart></ShoppingCart>
                 <p><a href="">Login</a></p>
                 <button className='btn btn-ghost rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-4 px-5 text-white font-bold'>Get Started</button>
+                <div className='absolute top-0 left-2.5 bg-red-600 h-5 w-5 flex items-center justify-center rounded-full text-white text-xs'>
+                    {cartTip}
+                </div>
             </div>
         </div>
     );
