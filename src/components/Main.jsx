@@ -32,7 +32,7 @@ const Main = ({ products, setCartTip }) => {
 
             {
                 activeBtn === 'products' ?
-                    <div className='max-w-7xl mx-auto'>
+                    <div className='max-w-7xl mx-auto px-4'>
                         <Products cartArrHandle={cartArrHandle} products={products}></Products>
                     </div> :
 
