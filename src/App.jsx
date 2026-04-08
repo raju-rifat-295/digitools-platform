@@ -7,6 +7,8 @@ import Navbar from './components/Navbar'
 import Status from './components/Status'
 import Steps from './components/Steps'
 import Pricing from './components/Pricing'
+import WorkFlow from './components/WorkFlow'
+
 const productsData = async () => {
   const res = await fetch('/productsData.json');
   return res.json();
@@ -25,6 +27,7 @@ function App() {
       <Main setCartTip={setCartTip} products={products}></Main>
       <Steps></Steps>
       <Pricing></Pricing>
+      <WorkFlow></WorkFlow>
     </>
   )
 }
