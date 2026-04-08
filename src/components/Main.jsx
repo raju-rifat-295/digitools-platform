@@ -52,7 +52,7 @@ const Main = ({ products, setCartTip }) => {
                                     <button onClick={() => setCartArr([])} className='btn btn-ghost rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-4 px-5 text-white font-bold w-full'>Proceed to Checkout</button>
                                 </div> :
 
-                                <div className='w-full min-h-[300px] text-[#627382] flex flex-col items-center justify-center gap-4 font-bold p-10 bg-[#F2F2F2] rounded-lg'>
+                                <div className='w-full min-h-75 text-[#627382] flex flex-col items-center justify-center gap-4 font-bold p-10 bg-[#F2F2F2] rounded-lg'>
                                     <Frown size={64} strokeWidth={2} />
                                     <h2 className='text-xl'>Cart is Empty</h2>
                                 </div>
