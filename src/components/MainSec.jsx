@@ -22,6 +22,11 @@ const MainSec = ({ products, setCartTip }) => {
         return accumulator + currentItem.price;
     }, 0);
 
+    const checkout = () => {
+        setCartArr([]);
+        toast.success("Checkout Succesful!!")
+    }
+
     return (
         <div className='flex flex-col items-center text-center space-y-4 py-30'>
             <h2 className='text-[48px] font-extrabold'>Premium Digital Tools</h2>
@@ -52,7 +57,7 @@ const MainSec = ({ products, setCartTip }) => {
                                         <p className='text-left text-[#627382] font-normal'>Total:</p>
                                         <p className='font-bold text-3xl'>${totalCost}</p>
                                     </div>
-                                    <button onClick={() => setCartArr([])} className='btn btn-ghost rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-4 px-5 text-white font-bold w-full'>Proceed to Checkout</button>
+                                    <button onClick={() => checkout()} className='btn btn-ghost rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-4 px-5 text-white font-bold w-full'>Proceed to Checkout</button>
                                 </div> :
 
                                 <div className='w-full min-h-75 text-[#627382] flex flex-col items-center justify-center gap-4 font-bold p-10 bg-[#F2F2F2] rounded-lg'>
