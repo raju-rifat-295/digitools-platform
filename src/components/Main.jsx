@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Products from './Products';
 import Cart from './Cart';
 import { Caravan, ForwardIcon, Frown } from 'lucide-react';
+import { toast } from 'react-toastify';
 
 const Main = ({ products, setCartTip }) => {
     const [activeBtn, setActiveBtn] = useState('products');
@@ -9,9 +10,11 @@ const Main = ({ products, setCartTip }) => {
 
     const cartArrHandle = (item) => {
         if (cartArr.find(p => p.id === item.id)) {
+            toast.error("Item already in the cart")
             return;
         }
         setCartArr([...cartArr, item]);
+        toast.success("Item added to the cart")
     }
 
     setCartTip(cartArr.length);

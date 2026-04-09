@@ -1,11 +1,13 @@
 import { X } from 'lucide-react';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 
 const Cart = ({ cartArr, setCartArr }) => {
     const removeItem = (item) => {
         const filteredArr = cartArr.filter(p => p.id !== item.id);
         setCartArr(filteredArr);
+        toast.success("Item removed");
     }
     return (
         <>

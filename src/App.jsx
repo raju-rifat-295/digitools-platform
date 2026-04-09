@@ -9,6 +9,7 @@ import Steps from './components/Steps'
 import Pricing from './components/Pricing'
 import WorkFlow from './components/WorkFlow'
 import Footer from './Footer'
+import { ToastContainer } from 'react-toastify'
 
 const productsData = async () => {
   const res = await fetch('/productsData.json');
@@ -18,7 +19,7 @@ const productsData = async () => {
 const products = productsData();
 
 function App() {
-  const [cartTip,setCartTip]=useState(0);
+  const [cartTip, setCartTip] = useState(0);
 
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
       <Pricing></Pricing>
       <WorkFlow></WorkFlow>
       <Footer></Footer>
+      <ToastContainer />
     </>
   )
 }
