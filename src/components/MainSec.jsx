@@ -4,7 +4,7 @@ import Cart from './Cart';
 import { Caravan, ForwardIcon, Frown } from 'lucide-react';
 import { toast } from 'react-toastify';
 
-const Main = ({ products, setCartTip }) => {
+const MainSec = ({ products, setCartTip }) => {
     const [activeBtn, setActiveBtn] = useState('products');
     const [cartArr, setCartArr] = useState([])
 
@@ -68,4 +68,4 @@ const Main = ({ products, setCartTip }) => {
     );
 };
 
-export default Main;
+export default MainSec;

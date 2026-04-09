@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
-import Main from './components/Main'
+import MainSec from './components/MainSec'
 import Navbar from './components/Navbar'
 import Status from './components/Status'
 import Steps from './components/Steps'
@@ -26,7 +26,7 @@ function App() {
       <Navbar cartTip={cartTip}></Navbar>
       <Hero></Hero>
       <Status></Status>
-      <Main setCartTip={setCartTip} products={products}></Main>
+      <MainSec setCartTip={setCartTip} products={products}></MainSec>
       <Steps></Steps>
       <Pricing></Pricing>
       <WorkFlow></WorkFlow>
